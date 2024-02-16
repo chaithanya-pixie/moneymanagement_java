@@ -87,7 +87,7 @@ class FinanceManager {
     public void categorizeTransactions() {
         System.out.println("\nCategory-wise Expense Summary:");
         for (Map.Entry<String, Double> entry : categoryTotals.entrySet()) {
-            System.out.println(entry.getKey() + ": $" + entry.getValue());
+            System.out.println(entry.getKey() + ": Rs " + entry.getValue());
         }
     }
 
@@ -117,7 +117,7 @@ class FinanceManager {
     }
 
     public void recordLoan(String name, double amount, String reason) {
-        loans.add("Name: " + name + " | Amount: $" + amount + " | Reason: " + reason + " | Date: " + new Date());
+        loans.add("Name: " + name + " | Amount: Rs" + amount + " | Reason: " + reason + " | Date: " + new Date());
         System.out.println("Loan recorded successfully.");
     }
 
